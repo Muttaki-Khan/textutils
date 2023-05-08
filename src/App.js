@@ -63,8 +63,8 @@ function App() {
     <div className="container">
     {/* <TextForm showAlert={showAlert} heading="Enter your text here"  mode={mode} /> */}
     <Routes>
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/" element={<TextForm />} />
+          <Route exact path="/about" element={<About mode={mode} />} />
+          <Route exact path="/" element={<TextForm showAlert={showAlert} mode={mode} />} />
     </Routes>
     </div>
     </BrowserRouter>
